@@ -86,8 +86,9 @@ img{
 	background:url(../blog/bg-menu.gif) repeat-x;
 }
 #header div#tagline{
-	background:url(../blog/Kerala_Jul2010 233.jpg) no-repeat center -20px;
-	margin-top:10px;
+	background:url(../blog/bg-header2.jpg) no-repeat center -20px;
+	margin-top:0px;
+	width: 100%
 }
 #header div#tagline div{
 	color:#295071;
