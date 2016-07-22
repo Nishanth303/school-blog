@@ -88,14 +88,14 @@ img{
 #header div#tagline{
 	background:url(../blog/bg-header2.jpg) no-repeat center -20px;
 	margin-top:0px;
-	width: 100%
+
 }
 #header div#tagline div{
 	color:#295071;
-	height:435px;
+	height:635px;
 	padding-left:20px;
 	margin:0 auto;
-	width:940px;
+	width:950px;
 }
 #header div#tagline div h4{
 	font-family:Georgia, "Times New Roman", Times, serif;
@@ -328,30 +328,9 @@ h4 a, div#aside p span a{
 	padding:0;
 	width:auto;
 }
-#content div div.calendar{
-	float:none;
-	margin-top:-20px;
- *margin-top:-30px;
-	padding:0 20px;
-	width:auto;
-}
-#content div div.calendar dl{
-	float:left;
-	width:278px;
-}
-#content div div.calendar dl dt{
-	color:#375675;
-	font-size:14px;
-	font-weight:bold;
-	padding-bottom:5px;
-	padding-top:20px;
- *padding-top:45px;
-}
-#content div div.calendar dl dd{
-	line-height:25px;
-	margin:0;
-	padding:0;
-}
+
+
+
 #content div div.section div h4{
 	padding-top:0;
 	width:400px;
@@ -429,12 +408,7 @@ h4 a, div#aside p span a{
 	text-align:justify;
 	margin-top:0;
 }
-#content div#home div div#calendar{
-	float:left;
-	margin-left:5px;
-	padding:0;
-	width:305px;
-}
+
 #content div div.section div#sidebar{
 	float:left;
 	margin-left:30px;
@@ -509,70 +483,5 @@ h4 a, div#aside p span a{
 	padding:15px 0;
 	text-align:justify;
 }
-#content div h3 div{
-	border:1px dashed red;
-	float:left;
-}
-#footer{
-	background:#274F75 url(../images/bg-footer.gif) repeat-x;
-	min-height:113px;
-	width:100%;
-}
-#footer div{
-	font-size:12px;
-	margin:0 auto;
-	padding-top:37px;
-	position:relative;
-	width:960px;
-}
-#footer div div#connect{
-	float:left;
-	padding:0;
-	width:250px;
-}
-#footer div div#connect a{
-	display:inline-block;
-	padding-right:10px;
-}
-#footer div div.section{
-	float:right;
-	padding:0;
-	width:700px;
-}
-#footer div div.section ul{
-	list-style:none;
-	margin:0;
-	padding:0;
-	position:absolute;
-	right:0;
-	top:0;
-}
-#footer div div.section ul li{
-	border-left:1px solid #6886a0;
-	float:left;
-	padding:0 5px;
-}
-#footer div div.section ul li.last{
-	border-right:0;
-}
-#footer div div.section ul li:first-child{
-	border:none;
-}
-#footer a{
-	color:#6886A0;
-	text-decoration:none;
-}
-#footer div div.section ul li a{
-	display:block;
-	height:12px;
-	line-height:10px;
-}
-#footer a:hover{
-	color:#fff;
-}
-#footer div div.section p{
-	color:#6886A0;
-	margin:0;
-	padding:20px 3px 0;
-	text-align:right;
-}
+
+
