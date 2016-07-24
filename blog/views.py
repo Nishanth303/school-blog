@@ -8,5 +8,13 @@ def home_page(request):
 
 
 def about(request):
-	
 	return render(request, 'blog/about.html')
+
+def event(request):
+	return render(request, 'blog/event.html')
+	
+def calendar(request):
+	return render(request, 'blog/calendar.html')
+
+def contact(request):
+	return render(request, 'blog/contact.html')

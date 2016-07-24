@@ -38,9 +38,9 @@ href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <ul>
       <li class="#"><a href="index.html">Home</a></li>
       <li><a href="{% url 'about' %}">About Us</a></li>
-      <li><a href="blog.html">Event</a></li>
-      <li><a href="school-calendar.html">School Calendar</a></li>
-      <li><a href="contact-us.html">Contact us</a></li>
+      <li><a href="{% url 'event' %}">Event</a></li>
+      <li><a href="{% url 'calendar' %}">School Calendar</a></li>
+      <li><a href="{% url 'contact' %}">Contact us</a></li>
     </ul>
 
     <div id="tagline">
