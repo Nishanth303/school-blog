@@ -488,3 +488,7 @@ h4 a, div#aside p span a{
 	color: #FAFAFA;
 
 }
+
+.icon{
+	float: left;
+}

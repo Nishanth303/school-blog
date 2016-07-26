@@ -7,4 +7,5 @@ urlpatterns = [
     url(r'^event/$', views.event, name='event'),
     url(r'^calendar/$', views.calendar, name='calendar'),
     url(r'^contact/$', views.contact, name='contact'),
+    url(r'^class_a/$', views.class_a, name='class_a'),
 ]

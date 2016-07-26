@@ -18,3 +18,6 @@ def calendar(request):
 
 def contact(request):
 	return render(request, 'blog/contact.html')
+
+def class_a(request):
+	return render(request, 'blog/class_a.html')
