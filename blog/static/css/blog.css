@@ -493,5 +493,9 @@ h4 a, div#aside p span a{
 	float: left;
 	color: #FAFAFA;
 }
+#section{
+	background:url(../blog/background.jpg) no-repeat center 180px;
+}
+  
 
 
