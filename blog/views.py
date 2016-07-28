@@ -21,3 +21,6 @@ def contact(request):
 
 def class_a(request):
 	return render(request, 'blog/class_a.html')
+
+def login(request):
+	return render(request, 'blog/login.html')
