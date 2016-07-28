@@ -6,6 +6,9 @@ body{
 	margin:0;
 	min-width:960px;
 }
+body#sections{
+	background:url(../blog/jh06z-desktop-191312646-1440x900.jpg);
+}
 a{
 	outline:none;
 }
@@ -489,13 +492,11 @@ h4 a, div#aside p span a{
 
 }
 
-.icon{
+#icon{
 	float: left;
 	color: #FAFAFA;
 }
-#section{
-	background:url(../blog/background.jpg) no-repeat center 180px;
-}
+
   
 
 
