@@ -1,4 +1,5 @@
 {% load staticfiles %}
+ 
 
 <!DOCTYPE html>
 <!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
@@ -25,7 +26,6 @@ href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   
   <link rel="stylesheet" href="css/style.css">
   <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-
 <style>
 table, th, td {
     border: 0px solid black;
@@ -33,27 +33,21 @@ table, th, td {
 </style>
 <script>
 function validateForm() {
-    var x = document.getElementById("email").value;
-var password = document.getElementById('password').value;    
-console.log(x)
-    var atpos = x.indexOf("@");
-    var dotpos = x.lastIndexOf(".");
-    if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+    var mail = document.forms["myForm"]["email"].value;
+var psd = document.forms["myForm"]["password"].value;
+    var atpos = mail.indexOf("@");
+    var dotpos = mail.lastIndexOf(".");
+    if (atpos<1 || dotpos<atpos+2 || dotpos+2>=mail.length) {
         alert("Not a valid e-mail address");
         return false;
-     }  
-if (password != "")
-{
-;
-}
-else
-{
-alert('Wrong Password')
-}
-return true;  
 
+   }
+if (psd == null || psd == "") {
+        alert("Not a valid Password");
+        return false;
+    }
 
-        }
+}
 
 
 </script>
@@ -71,12 +65,18 @@ return true;
       <h1><center>Login to<font color="red"> Admin</font></center></h1><br>
        </div>
 
-      <form onsubmit="return validateForm();" method="post"action="index.html"><center>
-        {%csrf_token%}
+         <form name="myForm" action="{% url 'class_info' %}" onsubmit="return validateForm();" method="post">
+
+
         
+
+        <input type='hidden' name='csrfmiddlewaretoken' value='wu5eSIDElr8EsVDgXmHmFNCCmSLdhyK5' />
+         {%csrf_token%}
+
+      
      <div class="text">
-        <p><center><input type="text" name="login" value="" placeholder="Username or Email"></p></center>
-        <p><center><input type="password" name="password" value="" placeholder="Password"></p></center>
+        <p><center><input type="text" name="email"  placeholder="Username or Email"></p></center>
+        <p><center><input type="password" name="password" placeholder="Password"></p></center>
         <p class="remember_me">
         
 

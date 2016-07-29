@@ -498,5 +498,9 @@ h4 a, div#aside p span a{
 }
 
   
-
+.class_info {
+	background:#fff url(../blog/background.gif) repeat-x center 0px;
+     color: #031240;
+    font-family: 'URW Chancery L';
+}
 

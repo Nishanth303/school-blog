@@ -1,8 +1,10 @@
 from django.shortcuts import render
 from django.contrib.auth import authenticate
+from django.http import HttpResponseRedirect
 from django.utils import timezone
 from .models import Post
 from django.core.mail import send_mail
+from django.shortcuts import get_object_or_404
 
 # Create your views here.
 def home_page(request):
@@ -38,7 +40,7 @@ def login_submit(request):
 		# the password verified for the user
 			if user.is_active:
 				context['message'] = "User is valid, active and authenticated"
-				return render (request,'index.html',context)	
+				return render (request,'class_info.html',context)	
 			else:
 					context['message']= "The password is valid, but the account has been disabled!"
 	else:
@@ -47,5 +49,5 @@ def login_submit(request):
 	
 	return render (request,'login.html',context)
 
-def index (request):
-	return render(request, 'blog/index.html')
+def class_info (request):
+	return render(request, 'blog/class_info.html')

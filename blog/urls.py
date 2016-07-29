@@ -10,5 +10,5 @@ urlpatterns = [
     url(r'^class_a/$', views.class_a, name='class_a'),
     url(r'^login/$', views.login, name='login'),
     url(r'^login_submit/$', views.login_submit, name='login_submit'),
-    url(r'^index/$', views.index, name='index'),
+    url(r'^class_info/$', views.class_info, name='class_info'),
 ]
