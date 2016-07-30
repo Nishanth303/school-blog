@@ -3,6 +3,7 @@
 
 <title>S.P.M School</title>
 
+
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
@@ -25,11 +26,21 @@ href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 table, th, td {
     border: 0px solid black;
 }
+
 </style>
 
-
+<div style="float:right">
+<form align="right" name="form1" method="post" action="/login/">
+  {% csrf_token %}
+  <label class="logoutLblPos">
+ <font size="5"> <input name="submit2" type="submit" id="submit2" value="Log out"></font>
+  </label>
+</form>
+</div>
+<div>
  <h1><center><u><font size="50">CLASS DETAILS</u></h1></font></center>
  <br>
+ 
  
  <center><h3><b><i><li><a href="{% url 'Ist_std' %}">Ist Standard</a></li></h1>
  <h3><b><i><li><a href="{% url 'IInd_std' %}">IInd Standard</a></li></h1>
