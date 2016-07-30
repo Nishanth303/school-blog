@@ -63,3 +63,4 @@ def IIIrd_std(request):
 
 def IVth_std(request):
 	return render(request, 'blog/IVth_std.html')
+

@@ -14,6 +14,7 @@ a{
 }
 img{
 	border:none;
+	
 }
 #header div#section:after, #header ul:after, #content div:after, #content div ul.services:after, #footer div:after, #footer div div.section ul:after{
 	clear:both;
