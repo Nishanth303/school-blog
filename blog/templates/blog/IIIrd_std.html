@@ -1,0 +1,205 @@
+{% load staticfiles %}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Attendance register</title>
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+table#t01 {
+    width: 100%;    
+    background-color: #f1f1c1;
+}
+</style>
+</head>
+<body>
+<h1><center><u>ATTENDANCE-REGISTER</u></center></h1><br>
+<h2><center><i>IIIrd Standard</i></center></h2>
+<h4>Class in-charge: Nisha.M <br><br>
+Date: June 2016 - March 2017</h4>
+
+
+<table style="width:100%">
+  <tr>
+<th>Slno</th>
+    <th>Name</th>
+    <th>Attendance</th> 
+    </tr>
+  <tr>
+<td>1</td>
+    <td>Anupama</td>
+    <td><input type="number" id="aNumber">
+<button onclick="aFunction()"><font color="green">Present</button>
+<button onclick="abFunction()"><font color="red">Absent</button>
+<input type="number" id="abNumber">
+</td>
+  </tr>
+  <tr>
+<td>2</td>
+    <td>Badhri</td>
+    <td><input type="number" id="bNumber">
+<button onclick="bFunction()"><font color="green">Present</button>
+<button onclick="acFunction()"><font color="red">Absent</button>
+<input type="number" id="acNumber"></td>
+    
+  </tr>
+  <tr>
+<td>3</td>
+    <td>Devika</td>
+    <td><input type="number" id="cNumber">
+<button onclick="cFunction()"><font color="green">Present</button>
+<button onclick="adFunction()"><font color="red">Absent</button>
+<input type="number" id="adNumber"></td>
+    
+  </tr>
+ <tr>
+<td>4</td>
+    <td>Govind</td>
+    <td><input type="number" id="dNumber">
+<button onclick="dFunction()"><font color="green">Present</button>
+<button onclick="aeFunction()"><font color="red">Absent</button>
+<input type="number" id="aeNumber"></td>
+    
+  </tr>
+ <tr>
+<td>5</td>
+    <td>Hashim</td>
+    <td><input type="number" id="eNumber">
+<button onclick="eFunction()">Present</button>
+<button onclick="afFunction()"><font color="red">Absent</button>
+<input type="number" id="afNumber"></td>
+   
+  </tr>
+ <tr>
+<td>6</td>
+    <td>Manisha</td>
+    <td><input type="number" id="fNumber">
+<button onclick="fFunction()"><font color="green">Present</button>
+<button onclick="agFunction()"><font color="red">Absent</button>
+<input type="number" id="agNumber"></td>
+   
+  </tr>
+ <tr>
+<td>7</td>
+    <td>Nithya</td>
+    <td><input type="number" id="gNumber">
+<button onclick="gFunction()"><font color="green">Present</button>
+<button onclick="ahFunction()"><font color="red">Absent</button>
+<input type="number" id="ahNumber"></td>
+    
+  </tr>
+ <tr>
+<td>8</td>
+    <td>Pranav</td>
+    
+    <td><input type="number" id="hNumber">
+<button onclick="hFunction()"><font color="green">Present</button>
+<button onclick="aiFunction()"><font color="red">Absent</button>
+<input type="number" id="aiNumber"></td>
+  </tr>
+ <tr>
+<td>9</td>
+    <td>Shilpa</td>
+    
+    <td><input type="number" id="iNumber">
+<button onclick="iFunction()"><font color="green">Present</button>
+<button onclick="ajFunction()"><font color="red">Absent</button>
+<input type="number" id="ajNumber"></td>
+  </tr>
+ <tr>
+<td>10</td>
+    <td>Tony</td>
+    
+    <td><input type="number" id="jNumber">
+<button onclick="jFunction()"><font color="green">Present</button>
+<button onclick="akFunction()"><font color="red">Absent</button>
+<input type="number" id="akNumber"></td>
+  </tr>
+
+
+</table>
+<br>
+
+<body>
+<script>
+function aFunction() {
+    document.getElementById("aNumber").stepUp();
+}
+
+function abFunction() {
+    document.getElementById("abNumber").stepUp();
+}
+function bFunction() {
+    document.getElementById("bNumber").stepUp();
+}
+
+function acFunction() {
+    document.getElementById("acNumber").stepUp();
+}
+function cFunction() {
+    document.getElementById("cNumber").stepUp();
+}
+
+function adFunction() {
+    document.getElementById("adNumber").stepUp();
+}
+function dFunction() {
+    document.getElementById("dNumber").stepUp();
+}
+
+function aeFunction() {
+    document.getElementById("aeNumber").stepUp();
+}
+function eFunction() {
+    document.getElementById("eNumber").stepUp();
+}
+
+function afFunction() {
+    document.getElementById("afNumber").stepUp();
+}
+function fFunction() {
+    document.getElementById("fNumber").stepUp();
+}
+
+function agFunction() {
+    document.getElementById("agNumber").stepUp();
+}
+function gFunction() {
+    document.getElementById("gNumber").stepUp();
+}
+
+function ahFunction() {
+    document.getElementById("ahNumber").stepUp();
+}
+function hFunction() {
+    document.getElementById("hNumber").stepUp();
+}
+
+function aiFunction() {
+    document.getElementById("aiNumber").stepUp();
+}
+function iFunction() {
+    document.getElementById("iNumber").stepUp();
+}
+
+function ajFunction() {
+    document.getElementById("ajNumber").stepUp();
+}
+function jFunction() {
+    document.getElementById("jNumber").stepUp();
+}
+
+function akFunction() {
+    document.getElementById("akNumber").stepUp();
+}
+</script>
+</body>
+</html>

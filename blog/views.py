@@ -51,3 +51,15 @@ def login_submit(request):
 
 def class_info (request):
 	return render(request, 'blog/class_info.html')
+
+def Ist_std(request):
+	return render(request, 'blog/Ist_std.html')
+
+def IInd_std(request):
+	return render(request, 'blog/IInd_std.html')
+
+def IIIrd_std(request):
+	return render(request, 'blog/IIIrd_std.html')
+
+def IVth_std(request):
+	return render(request, 'blog/IVth_std.html')
