@@ -27,6 +27,10 @@ href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <div id="header">
     <div id="section">
 
+ {% if user.is_authenticated %}
+<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+{% endif %}
+    
       <div class="headline">
       <font size="10"><center>S.P.M School</center></font>
       </div>

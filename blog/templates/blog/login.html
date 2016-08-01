@@ -59,6 +59,10 @@ if (psd == null || psd == "") {
   <div id="header">
     <div id="section">
 
+ {% if user.is_authenticated %}
+<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+{% endif %}
+
       <div class="headline">
       <font size="10": color="white"><center>S.P.M.L.P School</center></font>
       </div>

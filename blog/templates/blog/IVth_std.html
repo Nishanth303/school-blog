@@ -25,6 +25,9 @@ table#t01 {
 <h4>Class in-charge: Sreeja.T.S <br><br>
 Date: June 2016 - March 2017</h4>
 
+ {% if user.is_authenticated %}
+<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+{% endif %}
 
 <table style="width:100%">
   <tr>
