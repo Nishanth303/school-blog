@@ -6,6 +6,7 @@ from .models import Post
 from django.core.mail import send_mail
 from django.shortcuts import get_object_or_404
 from django.contrib.auth.models import User
+from .forms import PostForm
 
 # Create your views here.
 def home_page(request):
@@ -65,3 +66,6 @@ def IIIrd_std(request):
 def IVth_std(request):
 	return render(request, 'blog/IVth_std.html')
 
+def post_new(request):
+    form = PostForm()
+    return render(request, 'blog/post_edit.html', {'form': form})
