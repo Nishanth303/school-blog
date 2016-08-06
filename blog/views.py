@@ -55,21 +55,21 @@ def login_submit(request):
 def class_info (request):
 	return render(request, 'blog/class_info.html')
 
+p = 1
 def Ist_std(request):
-	if request.method == "POST":
-		form = PostForm(request.POST)
-		if form.is_valid():
-			post = form.save(commit=False)
-			
-			
-			post.save()
-			return redirect('blog/IInd_std.html', pk=post.pk)
-	else:
-		form = PostForm()
-	return render(request, 'blog/Ist_std.html')
+    global p
+    my_dictionary = {
+        "p" : p,
+    }
+    if request.GET.get('add'):
+        p = p+1
+        my_dictionary = {
+            "p" : p,
+        }
+    return render(request, "blog/Ist_std.html", my_dictionary)
 
 def IInd_std(request):
-	return render(request, 'blog/IInd_std.html', {'form': form})
+	return render(request, 'blog/IInd_std.html')
 
 def IIIrd_std(request):
 	return render(request, 'blog/IIIrd_std.html')
@@ -89,3 +89,5 @@ def post_new(request):
 	else:
 		form = PostForm()
 	return render(request, 'blog/post_edit.html', {'form': form})
+
+

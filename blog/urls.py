@@ -2,6 +2,7 @@ from django.conf.urls import url
 from . import views
 
 urlpatterns = [
+
     url(r'^$', views.home_page, name='home_page'),
     url(r'^about/$', views.about, name='about'),
     url(r'^event/$', views.event, name='event'),
@@ -15,6 +16,6 @@ urlpatterns = [
     url(r'^IInd_std/$', views.IInd_std, name='IInd_std'),
     url(r'^IIIrd_std/$', views.IIIrd_std, name='IIIrd_std'),
     url(r'^IVth_std/$', views.IVth_std, name='IVth_std'),
-    url(r'^post/new/$', views.post_new, name='post_new'),
+    url(r'^post/new/blog/home_page$', views.post_new, name='post_new'),
     
 ]
