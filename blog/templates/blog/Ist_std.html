@@ -42,10 +42,7 @@ table#t01 {
   <div id="header">
     <div id="section">
 
-    {% if user.is_authenticated %}
-<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-{% endif %}
-
+    
       <div class="headline">
 
       <font size="10"><center>S.P.M School</center></font>
@@ -62,23 +59,18 @@ table#t01 {
       <li><a href="{% url 'event' %}">Event</a></li>
       <li><a href="{% url 'calendar' %}">School Calendar</a></li>
       <li><a href="{% url 'contact' %}">Contact us</a></li>
-      <li><a href="{% url 'login' %}"><font color="red">School Staff Only</font></a></li>
+      
     </ul>
-    </div>
+ 
 
 <h1><center><u>ATTENDANCE-REGISTER</u></center></h1><br>
 <h2><center><i>Ist Standard</i></center></h2>
 <h4>Class in-charge: Hema.B <br><br>
 Date: June 2016 - March 2017</h4>
 
-<form method='get' action='#'>
-    <input type="submit" value="add" name="add"/>
-</form>
-<h1>{{ p }}</h1>
+<form method='get' action="#">
+   
 
- {% if user.is_authenticated %}
-<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-{% endif %}
 
 <table style="width:100%">
   <tr>
@@ -89,180 +81,99 @@ Date: June 2016 - March 2017</h4>
   <tr>
 <td>1</td>
     <td>Abijith</td>
-    <td><input type="number" id="aNumber">
-<button onclick="aFunction()"><font color="green">Present</button>
-<button onclick="abFunction()"><font color="red">Absent</button>
-<input type="number" id="abNumber">
+    <td>{{ p }}
+     <input type="submit" value="Present" name="add"/>
+     <input type="submit" value="absent" name="add1"/>  
+     {{ a }}
 </td>
   </tr>
-  <tr>
+    <tr>
 <td>2</td>
     <td>Adithya</td>
-    <td><input type="number" id="bNumber">
-<button onclick="bFunction()"><font color="green">Present</button>
-<button onclick="acFunction()"><font color="red">Absent</button>
-<input type="number" id="acNumber"></td>
-    
-  </tr>
+    <td>{{ b }}
+<input type="submit"  value="present" name="add2"/>
+<input type="submit" value="absent" name="add3"/>
+{{ c }}</td>
+    </tr>
+
   <tr>
 <td>3</td>
     <td>Bavana</td>
-    <td><input type="number" id="cNumber">
-<button onclick="cFunction()"><font color="green">Present</button>
-<button onclick="adFunction()"><font color="red">Absent</button>
-<input type="number" id="adNumber"></td>
-    
-  </tr>
+    <td>{{ d }}
+<input type="submit"  value="present" name="add4"/>
+<input type="submit" value="absent" name="add5"/>
+{{ e }}</td>
+    </tr>
+
  <tr>
 <td>4</td>
     <td>Bibin</td>
-    <td><input type="number" id="dNumber">
-<button onclick="dFunction()"><font color="green">Present</button>
-<button onclick="aeFunction()"><font color="red">Absent</button>
-<input type="number" id="aeNumber"></td>
-    
-  </tr>
+    <td>{{ f }}
+<input type="submit"  value="present" name="add6"/>
+<input type="submit" value="absent" name="add7"/>
+{{ g }}</td>
+    </tr>
+
  <tr>
 <td>5</td>
     <td>Devan</td>
-    <td><input type="number" id="eNumber">
-<button onclick="eFunction()"><font color="green">Present</button>
-<button onclick="afFunction()"><font color="red">Absent</button>
-<input type="number" id="afNumber"></td>
-   
-  </tr>
+    <td>{{ h }}
+<input type="submit"  value="present" name="add8"/>
+<input type="submit" value="absent" name="add9"/>
+{{ i }}</td>
+   </tr>
+
  <tr>
 <td>6</td>
     <td>Faizal</td>
-    <td><input type="number" id="fNumber">
-<button onclick="fFunction()"><font color="green">Present</button>
-<button onclick="agFunction()"><font color="red">Absent</button>
-<input type="number" id="agNumber"></td>
-   
-  </tr>
+    <td>{{ j }}
+<input type="submit"  value="present" name="add10"/>
+<input type="submit" value="absent" name="add11"/>
+{{ k }}</td>
+   </tr>
+
  <tr>
 <td>7</td>
     <td>Ganga</td>
-    <td><input type="number" id="gNumber">
-<button onclick="gFunction()"><font color="green">Present</button>
-<button onclick="ahFunction()"><font color="red">Absent</button>
-<input type="number" id="ahNumber"></td>
-    
+    <td>{{ l }}
+<input type="submit"  value="present" name="add12"/>
+<input type="submit" value="absent" name="add13"/>
+{{ m }}</td>
+
   </tr>
  <tr>
 <td>8</td>
     <td>Haris</td>
-    
-    <td><input type="number" id="hNumber">
-<button onclick="hFunction()"><font color="green">Present</button>
-<button onclick="aiFunction()"><font color="red">Absent</button>
-<input type="number" id="aiNumber"></td>
+    <td>{{ n }}
+<input type="submit"  value="present" name="add14"/>
+<input type="submit" value="absent" name="add15"/>
+{{ o }}</td>
   </tr>
+
  <tr>
 <td>9</td>
     <td>Jamsina</td>
-    
-    <td><input type="number" id="iNumber">
-<button onclick="iFunction()"><font color="green">Present</button>
-<button onclick="ajFunction()"><font color="red">Absent</button>
-<input type="number" id="ajNumber"></td>
+    <td>{{ q }}
+<input type="submit"  value="present" name="add16"/>
+<input type="submit" value="absent" name="add17"/>
+{{ r }}</td>
   </tr>
+
  <tr>
 <td>10</td>
     <td>Tara</td>
-    
-    <td><input type="number" id="jNumber">
-<button onclick="jFunction()"><font color="green">Present</button>
-<button onclick="akFunction()"><font color="red">Absent</button>
-<input type="number" id="akNumber"></td>
+    <td>{{ s }}
+<input type="submit"  value="present" name="add18"/>
+<input type="submit" value="absent" name="add19"/>
+{{ t }}</td>
   </tr>
 
 
 </table>
-<br>
-
-<body>
-<script>
-
-            
+</form>
 
 
-function aFunction() {
-    document.getElementById("aNumber").stepUp();
-    
 
-}
-
-function abFunction() {
-    document.getElementById("abNumber").stepUp();
-}
-function bFunction() {
-    document.getElementById("bNumber").stepUp();
-}
-
-function acFunction() {
-    document.getElementById("acNumber").stepUp();
-}
-function cFunction() {
-    document.getElementById("cNumber").stepUp();
-}
-
-function adFunction() {
-    document.getElementById("adNumber").stepUp();
-}
-function dFunction() {
-    document.getElementById("dNumber").stepUp();
-}
-
-function aeFunction() {
-    document.getElementById("aeNumber").stepUp();
-}
-function eFunction() {
-    document.getElementById("eNumber").stepUp();
-}
-
-function afFunction() {
-    document.getElementById("afNumber").stepUp();
-}
-function fFunction() {
-    document.getElementById("fNumber").stepUp();
-}
-
-function agFunction() {
-    document.getElementById("agNumber").stepUp();
-}
-function gFunction() {
-    document.getElementById("gNumber").stepUp();
-}
-
-function ahFunction() {
-    document.getElementById("ahNumber").stepUp();
-}
-function hFunction() {
-    document.getElementById("hNumber").stepUp();
-}
-
-function aiFunction() {
-    document.getElementById("aiNumber").stepUp();
-}
-function iFunction() {
-    document.getElementById("iNumber").stepUp();
-}
-
-function ajFunction() {
-    document.getElementById("ajNumber").stepUp();
-}
-function jFunction() {
-    document.getElementById("jNumber").stepUp();
-}
-
-function akFunction() {
-    document.getElementById("akNumber").stepUp();
-
-
- 
-
-}
-</script>
+   </div>
 </body>
 </html>

@@ -55,18 +55,118 @@ def login_submit(request):
 def class_info (request):
 	return render(request, 'blog/class_info.html')
 
-p = 1
+p = 0; a = 0; b = 0; c = 0; d = 0; e = 0; f = 0; g = 0; h = 0; i = 0;
+j = 0; k = 0; l = 0; m = 0; n = 0; o = 0; q = 0;
+r = 0; s = 0; t = 0
 def Ist_std(request):
-    global p
-    my_dictionary = {
-        "p" : p,
-    }
-    if request.GET.get('add'):
-        p = p+1
-        my_dictionary = {
-            "p" : p,
-        }
-    return render(request, "blog/Ist_std.html", my_dictionary)
+	global p,a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,q,r,s,t
+	my_dictionary = {
+		"p" : p, "a" : a, "b" : b, "c" : c, "d" : d, "e" : e, "f" : f,
+"g" : g, "h" : h, "i" : i, "j" : j, "k" : k,
+		"l" : l, "m" : m, "n" : n, "o" : o, "q" : q, "r" : r, "s" : s, "t" : t,
+	}
+	if request.GET.get('add'):
+		p = p+1
+		my_dictionary = {
+			"p" : p,
+		}
+	if request.GET.get('add1'):
+		a = a+1
+		my_dictionary = {
+			"a" : a,
+		}
+	if request.GET.get('add2'):
+		b = b+1
+		my_dictionary = {
+			"b" : b,
+		}
+	if request.GET.get('add3'):
+		c = c+1
+		my_dictionary = {
+            "c" : c,
+		}
+	if request.GET.get('add4'):
+		d = d+1
+		my_dictionary = {
+			"d" : d,
+		}
+	if request.GET.get('add5'):
+		e = e+1
+		my_dictionary = {
+			"e" : e,
+		}
+	if request.GET.get('add6'):
+		f = f+1
+		my_dictionary = {
+			"f" : f,
+		}
+	if request.GET.get('add7'):
+		g = g+1
+		my_dictionary = {
+			"g" : g,
+		}
+	if request.GET.get('add8'):
+		h = h+1
+		my_dictionary = {
+			"h" : h,
+		}
+	if request.GET.get('add9'):
+		i = i+1
+		my_dictionary = {
+			"i" : i,
+		}
+	if request.GET.get('add10'):
+		j = j+1
+		my_dictionary = {
+			"j" : j,
+		}
+	if request.GET.get('add11'):
+		k = k+1
+		my_dictionary = {
+			"k" : k,
+		}
+	if request.GET.get('add12'):
+		l = l+1
+		my_dictionary = {
+			"l" : l,
+		}
+	if request.GET.get('add13'):
+		m = m+1
+		my_dictionary = {
+			"m" : m,
+		}
+	if request.GET.get('add14'):
+		n = n+1
+		my_dictionary = {
+			"n" : n,
+		}
+	if request.GET.get('add15'):
+		o = o+1
+		my_dictionary = {
+			"o" : o,
+		}
+	if request.GET.get('add16'):
+		q = q+1
+		my_dictionary = {
+			"q" : q,
+		}
+	if request.GET.get('add17'):
+		r = r+1
+		my_dictionary = {
+			"r" : r,
+		}
+	if request.GET.get('add18'):
+		s = s+1
+		my_dictionary = {
+			"s" : s,
+		}
+	if request.GET.get('add19'):
+		t = t+1
+		my_dictionary = {
+			"t" : t,
+		}
+
+	return render(request, "blog/Ist_std.html", my_dictionary)
 
 def IInd_std(request):
 	return render(request, 'blog/IInd_std.html')
