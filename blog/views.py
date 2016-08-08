@@ -333,8 +333,99 @@ def IIIrd_std(request):
 
 	return render(request, 'blog/IIIrd_std.html',my_dictionary)
 
+ca = 0; cb = 0; cc = 0; cd = 0; ce = 0; cf = 0; cg = 0; ch = 0; ci =0; 
+cj = 0; ck = 0; cl = 0; cm = 0; cn = 0;
+co = 0; cp = 0; cq = 0; cr = 0; cs = 0; ct = 0
 def IVth_std(request):
-	return render(request, 'blog/IVth_std.html')
+		global ca,cb,cc,cd,ce,cf,cg,ch,ci,cj,ck,cl,cm,cn,co,cp,cq,cr,cs,ct
+
+		my_dictionary = {
+		"ca" : ca, "cb" : cb, "cc" : cc, "cd" : cd, "ce" : ce, "cf" : cf,
+"cg" : cg, "ch" : ch, "ci" : ci, "cj" : cj,
+		"ck" : ck, "cl" : cl, "cm" : cm, "cn" : cn, "co" : co, "cp" : cp,
+"cq" : cq, "cr" : cr, "cs" : cs, "ct" : ct
+		}
+		if request.GET.get('add60'):
+				ca = ca+1
+				my_dictionary["ca"] = ca
+
+		if request.GET.get('add61'):
+				cb = cb+1
+				my_dictionary["cb"] = cb
+
+		if request.GET.get('add62'):
+				cc = cc+1
+				my_dictionary["cc"] = cc
+
+		if request.GET.get('add63'):
+				cd = cd+1
+				my_dictionary["cd"] = cd
+
+		if request.GET.get('add64'):
+				ce = ce+1
+				my_dictionary["ce"] = ce
+
+		if request.GET.get('add65'):
+				cf = cf+1
+				my_dictionary["cf"] = cf
+
+		if request.GET.get('add66'):
+				cg = cg+1
+				my_dictionary["cg"] = cg
+
+		if request.GET.get('add67'):
+				ch = ch+1
+				my_dictionary["ch"] = ch
+
+		if request.GET.get('add68'):
+				ci = ci+1
+				my_dictionary["ci"] = ci
+
+		if request.GET.get('add69'):
+				cj = cj+1
+				my_dictionary["cj"] = cj
+
+		if request.GET.get('add70'):
+				ck = ck+1
+				my_dictionary["ck"] = ck
+
+		if request.GET.get('add71'):
+				cl = cl+1
+				my_dictionary["cl"] = cl
+
+		if request.GET.get('add72'):
+				cm = cm+1
+				my_dictionary["cm"] = cm
+
+		if request.GET.get('add73'):
+				cn = cn+1
+				my_dictionary["cn"] = cn
+
+		if request.GET.get('add74'):
+				co = co+1
+				my_dictionary["co"] = co
+
+		if request.GET.get('add75'):
+				cp = cp+1
+				my_dictionary["cp"] = cp
+
+		if request.GET.get('add76'):
+				cq = cq+1
+				my_dictionary["cq"] = cq
+
+		if request.GET.get('add77'):
+				cr = cr+1
+				my_dictionary["cr"] = cr
+
+		if request.GET.get('add78'):
+				cs = cs+1
+				my_dictionary["cs"] = cs
+
+		if request.GET.get('add79'):
+				ct = ct+1
+				my_dictionary["ct"] = ct
+
+		return render(request, 'blog/IVth_std.html', my_dictionary)
 
 def post_new(request):
 	if request.method == "POST":
