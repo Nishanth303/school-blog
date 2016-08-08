@@ -147,27 +147,96 @@ def Ist_std(request):
 
 	return render(request, "blog/Ist_std.html", my_dictionary)
 
-u=0; v=0
+u = 0; v = 0; w = 0; x = 0; y = 0; z = 0; aa = 0; ab = 0; ac = 0; ad =0; 
+ae = 0; af = 0; ag = 0; ah = 0; ai = 0; aj = 0; ak = 0; al = 0; am= 0; an = 0
 def IInd_std(request):
+		global u,v,w,x,y,z,aa,ab,ac,ad,ae,af,ag,ah,ai,aj,ak,al,am,an
 
-	global u,v
-	my_dictionary = {
-		"u" : u, "v" : v
-	}
-	if request.GET.get('add20'):
-		u = u+1
-		my_dictionary["u"] = u
-			
-	
+		my_dictionary = {
+			"u" : u, "v" : v, "w" : w, "x" : x, "y" : y, "z" : z, "aa" : aa, "ab"
+			: ab, "ac" : ac, "ad" : ad, "ae" : ae, "af" : af, "ag" : ag, "ah" :
+			ah, "ai" : ai, "aj" : aj, "ak" : ak, "al" : al, "am" : am, "an" : an
+		}
+		if request.GET.get('add20'):
+				u = u+1
+				my_dictionary["u"] = u
+		if request.GET.get('add21'):
+				v = v+1
+				my_dictionary["v"] = v
+		if request.GET.get('add22'):
+				w = w+1
+				my_dictionary["w"] = w
 
-	if request.GET.get('add21'):
-		v = v+1
-		my_dictionary["v"] = v
-			
-		
+		if request.GET.get('add23'):
+				x = x+1
+				my_dictionary["x"] = x
+
+		if request.GET.get('add24'):
+				y = y+1
+				my_dictionary["y"] = y
+
+		if request.GET.get('add25'):
+				z = z+1
+				my_dictionary["z"] = z
+
+		if request.GET.get('add26'):
+				aa = aa+1
+				my_dictionary["aa"] = aa
+
+		if request.GET.get('add27'):
+				ab = ab+1
+				my_dictionary["ab"] = ab
 
 
-	return render(request, 'blog/IInd_std.html',my_dictionary)
+		if request.GET.get('add28'):
+				ac = ac+1
+				my_dictionary["ac"] = ac
+
+
+		if request.GET.get('add29'):
+				ad = ad+1
+				my_dictionary["ad"] = ad
+
+		if request.GET.get('add30'):
+				ae = ae+1
+				my_dictionary["ae"] = ae
+
+		if request.GET.get('add31'):
+				af = af+1
+				my_dictionary["af"] = af
+
+		if request.GET.get('add32'):
+				ag = ag+1
+				my_dictionary["ag"] = ag
+
+		if request.GET.get('add33'):
+				ah = ah+1
+				my_dictionary["ah"] = ah
+
+		if request.GET.get('add34'):
+				ai = ai+1
+				my_dictionary["ai"] = ai
+
+		if request.GET.get('add35'):
+				aj = aj+1
+				my_dictionary["aj"] = aj
+
+		if request.GET.get('add36'):
+				ak = ak+1
+				my_dictionary["ak"] = ak
+
+		if request.GET.get('add37'):
+				al = al+1
+				my_dictionary["al"] = al
+
+		if request.GET.get('add38'):
+				am = am+1
+				my_dictionary["am"] = am
+		if request.GET.get('add39'):
+				an = an+1
+				my_dictionary["an"] = an
+
+		return render(request, 'blog/IInd_std.html', my_dictionary)
 
 ba=0; bb=0; bc=0; bd=0; be=0; bf=0; bg=0; bh=0; bi=0; bj=0; bk=0; bl=0; bm=0; bn=0; bo=0;
 bp=0; bq=0; br=0; bs=0; bt=0
