@@ -1,10 +1,26 @@
 {% load staticfiles %}
 
-
 <!DOCTYPE html>
 <html>
 <head>
 <title>Attendance register</title>
+ <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet"
+href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+<meta charset="UTF-8" />
+<link rel="stylesheet" type="text/css" href="styles/style.css" />
+<!--[if IE 6]><link rel="stylesheet" type="text/css" href="styles/ie6.css" /><![endif]-->
+
 <style>
 table, th, td {
     border: 1px solid black;
@@ -18,13 +34,40 @@ table#t01 {
     width: 100%;    
     background-color: #f1f1c1;
 }
+
 </style>
 </head>
 <body>
+<div id="page">
+  <div id="header">
+    <div id="section">
+
+    
+      <div class="headline">
+
+      <font size="10"><center>S.P.M School</center></font>
+     
+      </div>
+
+      <span >303nishanth@gmail.com <br />
+      <br />
+      +91 9961685892</span> </div>
+      
+    <ul>
+      <li class="#"><a href="/">Home</a></li>
+      <li><a href="{% url 'about' %}">About Us</a></li>
+      <li><a href="{% url 'event' %}">Event</a></li>
+      <li><a href="{% url 'calendar' %}">School Calendar</a></li>
+      <li><a href="{% url 'contact' %}">Contact us</a></li>
+      
+    </ul>
+ 
+
 <h1><center><u>ATTENDANCE-REGISTER</u></center></h1><br>
-<h2><center><i>IInd Standard</i></center></h2>
-<h4>Class in-charge: Haridas.P <br><br>
+<h2><center><i>Ist Standard</i></center></h2>
+<h4>Class in-charge: Hema.B <br><br>
 Date: June 2016 - March 2017</h4>
+
 
 <form method='get' action="#">
 
@@ -41,7 +84,7 @@ Date: June 2016 - March 2017</h4>
   <tr>
 <td>1</td>
     <td>Arun</td>
-    <td><td>{{ u }}
+    <td>{{ u }}
      <input type="submit" value="Present" name="add20"/>
      <input type="submit" value="absent" name="add21"/>  
      {{ v }}

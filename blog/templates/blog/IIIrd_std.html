@@ -1,10 +1,26 @@
 {% load staticfiles %}
 
-
 <!DOCTYPE html>
 <html>
 <head>
 <title>Attendance register</title>
+ <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet"
+href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+<meta charset="UTF-8" />
+<link rel="stylesheet" type="text/css" href="styles/style.css" />
+<!--[if IE 6]><link rel="stylesheet" type="text/css" href="styles/ie6.css" /><![endif]-->
+
 <style>
 table, th, td {
     border: 1px solid black;
@@ -18,13 +34,43 @@ table#t01 {
     width: 100%;    
     background-color: #f1f1c1;
 }
+
 </style>
 </head>
 <body>
+<div id="page">
+  <div id="header">
+    <div id="section">
+
+    
+      <div class="headline">
+
+      <font size="10"><center>S.P.M School</center></font>
+     
+      </div>
+
+      <span >303nishanth@gmail.com <br />
+      <br />
+      +91 9961685892</span> </div>
+      
+    <ul>
+      <li class="#"><a href="/">Home</a></li>
+      <li><a href="{% url 'about' %}">About Us</a></li>
+      <li><a href="{% url 'event' %}">Event</a></li>
+      <li><a href="{% url 'calendar' %}">School Calendar</a></li>
+      <li><a href="{% url 'contact' %}">Contact us</a></li>
+      
+    </ul>
+ 
+
 <h1><center><u>ATTENDANCE-REGISTER</u></center></h1><br>
-<h2><center><i>IIIrd Standard</i></center></h2>
-<h4>Class in-charge: Nisha.M <br><br>
+<h2><center><i>Ist Standard</i></center></h2>
+<h4>Class in-charge: Hema.B <br><br>
 Date: June 2016 - March 2017</h4>
+
+
+<form method='get' action="#">
+
 
  {% if user.is_authenticated %}
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
@@ -39,170 +85,98 @@ Date: June 2016 - March 2017</h4>
   <tr>
 <td>1</td>
     <td>Anupama</td>
-    <td><input type="number" id="aNumber">
-<button onclick="aFunction()"><font color="green">Present</button>
-<button onclick="abFunction()"><font color="red">Absent</button>
-<input type="number" id="abNumber">
+    <td>{{ ba }}
+     <input type="submit" value="Present" name="add40"/>
+     <input type="submit" value="absent" name="add41"/>  
+     {{ bb }}
 </td>
   </tr>
   <tr>
 <td>2</td>
     <td>Badhri</td>
-    <td><input type="number" id="bNumber">
-<button onclick="bFunction()"><font color="green">Present</button>
-<button onclick="acFunction()"><font color="red">Absent</button>
-<input type="number" id="acNumber"></td>
+    <td>{{ bc }}
+     <input type="submit" value="Present" name="add42"/>
+     <input type="submit" value="absent" name="add43"/>  
+     {{ bd }}</td>
     
   </tr>
   <tr>
 <td>3</td>
     <td>Devika</td>
-    <td><input type="number" id="cNumber">
-<button onclick="cFunction()"><font color="green">Present</button>
-<button onclick="adFunction()"><font color="red">Absent</button>
-<input type="number" id="adNumber"></td>
+    <td>{{ be }}
+     <input type="submit" value="Present" name="add44"/>
+     <input type="submit" value="absent" name="add45"/>  
+     {{ bf }}</td>
     
   </tr>
  <tr>
 <td>4</td>
     <td>Govind</td>
-    <td><input type="number" id="dNumber">
-<button onclick="dFunction()"><font color="green">Present</button>
-<button onclick="aeFunction()"><font color="red">Absent</button>
-<input type="number" id="aeNumber"></td>
+    <td>{{ bg }}
+     <input type="submit" value="Present" name="add46"/>
+     <input type="submit" value="absent" name="add47"/>  
+     {{ bh }}</td>
     
   </tr>
  <tr>
 <td>5</td>
     <td>Hashim</td>
-    <td><input type="number" id="eNumber">
-<button onclick="eFunction()">Present</button>
-<button onclick="afFunction()"><font color="red">Absent</button>
-<input type="number" id="afNumber"></td>
+    <td>{{ bi }}
+     <input type="submit" value="Present" name="add48"/>
+     <input type="submit" value="absent" name="add49"/>  
+     {{ bj }}</td>
    
   </tr>
  <tr>
 <td>6</td>
     <td>Manisha</td>
-    <td><input type="number" id="fNumber">
-<button onclick="fFunction()"><font color="green">Present</button>
-<button onclick="agFunction()"><font color="red">Absent</button>
-<input type="number" id="agNumber"></td>
+    <td>{{ bk }}
+     <input type="submit" value="Present" name="add50"/>
+     <input type="submit" value="absent" name="add51"/>  
+     {{ bl }}</td>
    
   </tr>
  <tr>
 <td>7</td>
     <td>Nithya</td>
-    <td><input type="number" id="gNumber">
-<button onclick="gFunction()"><font color="green">Present</button>
-<button onclick="ahFunction()"><font color="red">Absent</button>
-<input type="number" id="ahNumber"></td>
+    <td>{{ bm }}
+     <input type="submit" value="Present" name="add52"/>
+     <input type="submit" value="absent" name="add53"/>  
+     {{ bn }}</td>
     
   </tr>
  <tr>
 <td>8</td>
     <td>Pranav</td>
     
-    <td><input type="number" id="hNumber">
-<button onclick="hFunction()"><font color="green">Present</button>
-<button onclick="aiFunction()"><font color="red">Absent</button>
-<input type="number" id="aiNumber"></td>
+    <td>{{ bo }}
+     <input type="submit" value="Present" name="add54"/>
+     <input type="submit" value="absent" name="add55"/>  
+     {{ bp }}</td>
   </tr>
  <tr>
 <td>9</td>
     <td>Shilpa</td>
     
-    <td><input type="number" id="iNumber">
-<button onclick="iFunction()"><font color="green">Present</button>
-<button onclick="ajFunction()"><font color="red">Absent</button>
-<input type="number" id="ajNumber"></td>
+    <td>{{ bq }}
+     <input type="submit" value="Present" name="add56"/>
+     <input type="submit" value="absent" name="add57"/>  
+     {{ br }}</td>
   </tr>
  <tr>
 <td>10</td>
     <td>Tony</td>
     
-    <td><input type="number" id="jNumber">
-<button onclick="jFunction()"><font color="green">Present</button>
-<button onclick="akFunction()"><font color="red">Absent</button>
-<input type="number" id="akNumber"></td>
+    <td>{{ bs }}
+     <input type="submit" value="Present" name="add58"/>
+     <input type="submit" value="absent" name="add59"/>  
+     {{ bt }}</td>
   </tr>
 
 
 </table>
 <br>
 
-<body>
-<script>
-function aFunction() {
-    document.getElementById("aNumber").stepUp();
-}
-
-function abFunction() {
-    document.getElementById("abNumber").stepUp();
-}
-function bFunction() {
-    document.getElementById("bNumber").stepUp();
-}
-
-function acFunction() {
-    document.getElementById("acNumber").stepUp();
-}
-function cFunction() {
-    document.getElementById("cNumber").stepUp();
-}
-
-function adFunction() {
-    document.getElementById("adNumber").stepUp();
-}
-function dFunction() {
-    document.getElementById("dNumber").stepUp();
-}
-
-function aeFunction() {
-    document.getElementById("aeNumber").stepUp();
-}
-function eFunction() {
-    document.getElementById("eNumber").stepUp();
-}
-
-function afFunction() {
-    document.getElementById("afNumber").stepUp();
-}
-function fFunction() {
-    document.getElementById("fNumber").stepUp();
-}
-
-function agFunction() {
-    document.getElementById("agNumber").stepUp();
-}
-function gFunction() {
-    document.getElementById("gNumber").stepUp();
-}
-
-function ahFunction() {
-    document.getElementById("ahNumber").stepUp();
-}
-function hFunction() {
-    document.getElementById("hNumber").stepUp();
-}
-
-function aiFunction() {
-    document.getElementById("aiNumber").stepUp();
-}
-function iFunction() {
-    document.getElementById("iNumber").stepUp();
-}
-
-function ajFunction() {
-    document.getElementById("ajNumber").stepUp();
-}
-function jFunction() {
-    document.getElementById("jNumber").stepUp();
-}
-
-function akFunction() {
-    document.getElementById("akNumber").stepUp();
-}
-</script>
+</form>
 </body>
 </html>
