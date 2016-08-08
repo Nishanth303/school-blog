@@ -168,8 +168,26 @@ def Ist_std(request):
 
 	return render(request, "blog/Ist_std.html", my_dictionary)
 
+u=0; v=0
 def IInd_std(request):
-	return render(request, 'blog/IInd_std.html')
+	global u,v
+	my_dictionary = {
+		"u" : u, "v" : v
+	}
+	if request.GET.get('add'):
+		u = u+1
+		my_dictionary = {
+			"u" : u,
+		}
+
+	if request.GET.get('add'):
+		v = v+1
+		my_dictionary = {
+			"v" : v,
+		}
+
+
+	return render(request, 'blog/IInd_std.html',my_dictionary)
 
 def IIIrd_std(request):
 	return render(request, 'blog/IIIrd_std.html')

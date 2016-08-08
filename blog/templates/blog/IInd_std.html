@@ -26,6 +26,8 @@ table#t01 {
 <h4>Class in-charge: Haridas.P <br><br>
 Date: June 2016 - March 2017</h4>
 
+<form method='get' action="#">
+
  {% if user.is_authenticated %}
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 {% endif %}
@@ -39,10 +41,10 @@ Date: June 2016 - March 2017</h4>
   <tr>
 <td>1</td>
     <td>Arun</td>
-    <td><input type="number" id="aNumber">
-<button onclick="aFunction()"><font color="green">Present</button>
-<button onclick="abFunction()"><font color="red">Absent</button>
-<input type="number" id="abNumber">
+    <td><td>{{ u }}
+     <input type="submit" value="Present" name="add20"/>
+     <input type="submit" value="absent" name="add21"/>  
+     {{ v }}
 </td>
   </tr>
   <tr>
@@ -131,78 +133,6 @@ Date: June 2016 - March 2017</h4>
 </table>
 <br>
 
-<body>
-<script>
-function aFunction() {
-    document.getElementById("aNumber").stepUp();
-}
-
-function abFunction() {
-    document.getElementById("abNumber").stepUp();
-}
-function bFunction() {
-    document.getElementById("bNumber").stepUp();
-}
-
-function acFunction() {
-    document.getElementById("acNumber").stepUp();
-}
-function cFunction() {
-    document.getElementById("cNumber").stepUp();
-}
-
-function adFunction() {
-    document.getElementById("adNumber").stepUp();
-}
-function dFunction() {
-    document.getElementById("dNumber").stepUp();
-}
-
-function aeFunction() {
-    document.getElementById("aeNumber").stepUp();
-}
-function eFunction() {
-    document.getElementById("eNumber").stepUp();
-}
-
-function afFunction() {
-    document.getElementById("afNumber").stepUp();
-}
-function fFunction() {
-    document.getElementById("fNumber").stepUp();
-}
-
-function agFunction() {
-    document.getElementById("agNumber").stepUp();
-}
-function gFunction() {
-    document.getElementById("gNumber").stepUp();
-}
-
-function ahFunction() {
-    document.getElementById("ahNumber").stepUp();
-}
-function hFunction() {
-    document.getElementById("hNumber").stepUp();
-}
-
-function aiFunction() {
-    document.getElementById("aiNumber").stepUp();
-}
-function iFunction() {
-    document.getElementById("iNumber").stepUp();
-}
-
-function ajFunction() {
-    document.getElementById("ajNumber").stepUp();
-}
-function jFunction() {
-    document.getElementById("jNumber").stepUp();
-}
-
-function akFunction() {
-    document.getElementById("akNumber").stepUp();
-}
-</script>
+</form>
 </body>
 </html>
