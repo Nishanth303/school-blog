@@ -441,3 +441,5 @@ def post_new(request):
 	return render(request, 'blog/post_edit.html', {'form': form})
 
 
+def onam(request):
+	return render(request, 'blog/onam.html')

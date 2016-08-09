@@ -42,14 +42,15 @@ href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
       <li><a href="{% url 'event' %}">Event</a></li>
       <li><a href="{% url 'calendar' %}">School Calendar</a></li>
       <li><a href="{% url 'contact' %}">Contact us</a></li>
+      <li><a href="{% url 'login' %}"><font color="red">School Staff Only</font></a></li>
     </ul>
 
   
-  <h1><center><u><font size="50": color="blue">onam</u></h1></font></center>
-  <img src="{% static "blog/onam2.jpg" %}" style="width: 30%; height: 40%;"/>
-  <img src="{% static "blog/_DSC0069.JPG" %}" style="width: 30%; height: 20%;"/>
-  <img src="{% static "blog/15009043727_5c39fdaef5_b.jpg" %}" style="width: 30%; height: 20%;"/>
-  <img src="{% static "blog/LpQVh.jpg" %}" style="width: 30%; height: 20%;"/>
+
+  <h1><u><font size="50": color="blue">onam</u></h1></font>
+  <a href="{% url 'onam' %}">
+  <img src="{% static "blog/folders_png8742.png" %}" alt="Go to onam" style="width: 20%; height: 20%;" />
+  </a>
   <br>
   
    <h1><center><u><font size="50": color="blue">Sports</u></h1></font></center><br><br>

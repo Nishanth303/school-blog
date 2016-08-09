@@ -17,5 +17,6 @@ urlpatterns = [
     url(r'^IIIrd_std/$', views.IIIrd_std, name='IIIrd_std'),
     url(r'^IVth_std/$', views.IVth_std, name='IVth_std'),
     url(r'^post/new/blog/home_page$', views.post_new, name='post_new'),
+    url(r'^onam/$', views.onam, name='onam'),
     
 ]
