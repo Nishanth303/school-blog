@@ -443,3 +443,10 @@ def post_new(request):
 
 def onam(request):
 	return render(request, 'blog/onam.html')
+
+def sports(request):
+	return render(request, 'blog/sports.html')
+
+
+def Independence_Day(request):
+	return render(request, 'blog/Independence_Day.html')

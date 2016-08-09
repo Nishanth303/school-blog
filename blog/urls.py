@@ -18,5 +18,6 @@ urlpatterns = [
     url(r'^IVth_std/$', views.IVth_std, name='IVth_std'),
     url(r'^post/new/blog/home_page$', views.post_new, name='post_new'),
     url(r'^onam/$', views.onam, name='onam'),
-    
+    url(r'^sports/$', views.sports, name='sports'),
+    url(r'^Independence_Day/$', views.Independence_Day, name='Independence_Day'),
 ]
