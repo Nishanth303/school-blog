@@ -32,28 +32,49 @@ table, th, td {
 }
 </style>
 <script type="text/javascript">
-function validation()
+ function validation()
       {
-        var a = document.form.pass.value;
-        var valid = true;       
-        if(a=="")
+        var b = document.form.pass.value;
+var a = document.form.mail.value;
+        var valid = true;
+
+if(a=="")
         {
           valid = false;
-          alert("Please Enter Your Password");
+          alert("Please Enter Your email");
         }
-        else if (a != 'password123') {
+        else if (a != '303nishanth@gmail.com') {
           valid = false;
-          alert("Your Password is wrong");
+          alert("Your email is wrong");
         }
 
         if (valid) {
-          alert('Correct Password'); 
+
+        }
+        else {
+          document.form.mail.focus();
+          return false;
+        }
+
+if(b=="")
+        {
+          valid = false;
+          alert("Please Enter Your password");
+        }
+        else if (b != 'password123') {
+          valid = false;
+          alert("Your password is wrong");
+        }
+
+        if (valid) {
+          alert('Email & password matches');
         }
         else {
           document.form.pass.focus();
-          return false; 
+          return false;
         }
       }
+
 
 
 </script>
@@ -99,20 +120,22 @@ function validation()
       <h1><center>Login As<font color="red"> Admin</font></center></h1><br>
        </div>
 
-        <CENTER>
-<form name="form" method="post" onsubmit="return validation()" action="{% url 'class_info' %}">
-{% csrf_token %}
+        <center><form name="form" method="post" onsubmit="return validation()"
+action="{% url 'class_info' %}">
+      {% csrf_token %}
       <tr>
-       
+
+        <td><input type="text" name="mail" placeholder="Email"></td>
+      </tr><br><br>
+<tr>
+
         <td><input type="password" name="pass" placeholder="Password"></td>
       </tr>
       <tr>
-        <td></td>
-        <br><br><br>
+        <td></td><br><br>
         <td><input type="submit" name="sub" value="Submit"></td>
       </tr>
     </form>
-</CENTER>
 
 
     
