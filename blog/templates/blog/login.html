@@ -31,23 +31,29 @@ table, th, td {
     border: 0px solid black;
 }
 </style>
-<script>
-function validateForm() {
-    var mail = document.forms["myForm"]["email"].value;
-var psd = document.forms["myForm"]["password"].value;
-    var atpos = mail.indexOf("@");
-    var dotpos = mail.lastIndexOf(".");
-    if (atpos<1 || dotpos<atpos+2 || dotpos+2>=mail.length) {
-        alert("Not a valid e-mail address");
-        return false;
+<script type="text/javascript">
+function validation()
+      {
+        var a = document.form.pass.value;
+        var valid = true;       
+        if(a=="")
+        {
+          valid = false;
+          alert("Please Enter Your Password");
+        }
+        else if (a != 'password123') {
+          valid = false;
+          alert("Your Password is wrong");
+        }
 
-   }
-if (psd == null || psd == "") {
-        alert("Not a valid Password");
-        return false;
-    }
-
-}
+        if (valid) {
+          alert('Correct Password'); 
+        }
+        else {
+          document.form.pass.focus();
+          return false; 
+        }
+      }
 
 
 </script>
@@ -63,8 +69,12 @@ if (psd == null || psd == "") {
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 {% endif %}
 
+<img src="{% static "blog/sclogo.png" %}" style= "width: 100px; height: 75px;" align="left" />
+
+
       <div class="headline">
       <font size="10": color="white"><center>S.P.M.L.P School</center></font>
+       <font size="3"><center>Established 1918</center></font>
       </div>
 
 
@@ -89,27 +99,21 @@ if (psd == null || psd == "") {
       <h1><center>Login As<font color="red"> Admin</font></center></h1><br>
        </div>
 
-         <form name="myForm" action="{% url 'class_info' %}" onsubmit="return validateForm();" method="post">
+        <CENTER>
+<form name="form" method="post" onsubmit="return validation()" action="{% url 'class_info' %}">
+{% csrf_token %}
+      <tr>
+       
+        <td><input type="password" name="pass" placeholder="Password"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <br><br><br>
+        <td><input type="submit" name="sub" value="Submit"></td>
+      </tr>
+    </form>
+</CENTER>
 
-
-        
-
-        <input type='hidden' name='csrfmiddlewaretoken' value='wu5eSIDElr8EsVDgXmHmFNCCmSLdhyK5' />
-         {%csrf_token%}
-
-      
-     <div class="text">
-        <p><center><input type="text" name="email"  placeholder="Username or Email"></p></center>
-        <p><center><input type="password" name="password" placeholder="Password"></p></center>
-        <p class="remember_me">
-        
-
-            
-          
-        </p>
-        <center><p class="submit"><input type="submit" name="commit" value="Login"></p></center>
-      </form>
-    </div>
 
     
   </section>

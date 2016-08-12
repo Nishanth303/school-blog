@@ -20,4 +20,5 @@ urlpatterns = [
     url(r'^onam/$', views.onam, name='onam'),
     url(r'^sports/$', views.sports, name='sports'),
     url(r'^Independence_Day/$', views.Independence_Day, name='Independence_Day'),
+    url(r'^privacy/$', views.privacy, name='privacy'),
 ]
