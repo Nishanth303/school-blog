@@ -526,11 +526,13 @@ h4 a, div#aside p span a{
 
 	width: 700px;
 	margin: 0 auto;
-	position: absolute;
-	bottom: 0;
+	padding-top: 300px;
+	
+
 }
+
 #footer p {
 	text-align: center;
 	padding: 0;
-	font-size: 1px;
+	font-size: 15px;
 }
