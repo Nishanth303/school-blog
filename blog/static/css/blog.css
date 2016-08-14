@@ -541,3 +541,7 @@ h4 a, div#aside p span a{
 #slider {
 	background-color: #828282;
 }
+
+#box{
+	padding: 10px;
+}
