@@ -123,9 +123,9 @@ img{
 	background:url(../images/bg-content.gif) no-repeat top center;
 	margin:0 auto;
 	min-height:174px;
-	overflow:hidden;
+	
 	position:relative;
-	width:960px;
+	width:700px;
 	;
 }
 #content div#home{
@@ -535,4 +535,9 @@ h4 a, div#aside p span a{
 	text-align: center;
 	padding: 0;
 	font-size: 15px;
+}
+
+
+#slider {
+	background-color: #828282;
 }

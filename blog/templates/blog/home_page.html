@@ -21,6 +21,10 @@ href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 <meta charset="UTF-8" />
 <link rel="stylesheet" type="text/css" href="styles/style.css" />
 <!--[if IE 6]><link rel="stylesheet" type="text/css" href="styles/ie6.css" /><![endif]-->
+<style>
+.mySlides {display:none;}
+</style>
+
 </head>
 
 <body>
@@ -82,6 +86,41 @@ classes starts form 29th August onwards<br><br>
 </td>
 </tr>
 </table>
+
+
+<table border="1" align="left" >
+
+<tr><td><font size="5"><center><b><u>Latest Events</u></center></b></font><br>
+
+<div id="slider">
+<center><i><font size="3" color="orange">&#9733; Indep</font><font
+color="white">enden</font><font color="green">ce Day
+&#9733;</font></i></center>
+  <img class="mySlides" src="{% static "blog/images-17.jpeg" %}"
+style="width: 350px; height: 300px;" />
+  <img class="mySlides" src="{% static "blog/images-11.jpeg" %}"
+style="width: 350px; height: 300px;" />
+  <img class="mySlides" src="{% static "blog/images-20.jpeg" %}"
+style="width: 350px; height: 300px;" />
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</td></tr>
+</table> </center></font></td></tr></table>
 
   <div id="content">
     <div id="home">
